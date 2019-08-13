@@ -16,18 +16,16 @@ class MainHeader extends React.Component {
     return (
       <Header>
         <Left>
-          {/* <Button transparent>
-            <Icon name="arrow-back" />
-          </Button> */}
-        </Left>
-        <Body>
-          <Title>알파카 투자 일지</Title>
-        </Body>
-        <Right>
-          <Button transparent>
+          <Button
+            transparent
+            onPress={() => this.props.navigation.navigate('DrawerOpen')}>
             <Icon name="menu" />
           </Button>
-        </Right>
+        </Left>
+        <Body>
+          <Title>HomeScreen</Title>
+        </Body>
+        <Right />
       </Header>
     )
   }

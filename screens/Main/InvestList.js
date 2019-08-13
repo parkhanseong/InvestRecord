@@ -6,7 +6,7 @@ import { Text } from 'native-base'
 
 const InvestList = () => {
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <View style={styles.category}>
         <View
           style={[
